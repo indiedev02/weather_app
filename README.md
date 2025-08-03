@@ -1,16 +1,58 @@
-# weather_application
+# 🌤️ Flutter Weather App
 
-A new Flutter project.
+A simple Flutter weather application that fetches and displays the current temperature and city name using a weather API.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- Auto-detects the user's current city.
+- Fetches real-time weather data.
+- Displays city name and current temperature.
 
-A few resources to get you started if this is your first Flutter project:
+## 📁 Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+lib/
+├── main.dart
+└── screens/
+    └── weather_page.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🔧 Setup Instructions
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/flutter-weather-app.git
+   cd flutter-weather-app
+   ```
+
+2. **Get dependencies**:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Add your Weather API key**:
+
+   - Open the file: `lib/screens/weather_page.dart`
+   - Replace the API key in the following line with your own from [OpenWeatherMap](https://openweathermap.org/api):
+
+     ```dart
+     final _weatherService = WeatherService("YOUR_API_KEY_HERE");
+     ```
+
+4. **Run the app**:
+
+   ```bash
+   flutter run
+   ```
+
+## 🔑 Getting an API Key
+
+- Sign up at [https://openweathermap.org/](https://openweathermap.org/)
+- Go to the API keys section and generate a key.
+- Paste that key into the `weatherService` constructor in `lib/screens/weather_page.dart`.
+
+## 📃 License
+
+This project is licensed under the MIT License.
