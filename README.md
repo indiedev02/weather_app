@@ -52,7 +52,3 @@ lib/
 - Sign up at [https://openweathermap.org/](https://openweathermap.org/)
 - Go to the API keys section and generate a key.
 - Paste that key into the `weatherService` constructor in `lib/screens/weather_page.dart`.
-
-## 📃 License
-
-This project is licensed under the MIT License.
